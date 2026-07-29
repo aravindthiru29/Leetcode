@@ -3,14 +3,14 @@ class Solution {
         if (A.length < 3) return false;
         int low = 0;
         int high = A.length - 1;
-        while (low < high) {
-            if (A[low + 1] > A[low]) {
+        while(low < high){
+            if(A[low + 1] > A[low]){
                 low++;
             }
-            else if (A[high - 1] > A[high]) {
+            else if(A[high - 1] > A[high]){
                 high--;
             }
-            else {
+            else{
                 break;
             }
         }
